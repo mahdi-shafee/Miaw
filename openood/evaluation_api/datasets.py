@@ -721,6 +721,7 @@ def get_id_ood_dataloader(id_name, data_root, preprocessor, **loader_kwargs):
         parser.add_argument('-b', '--batch-size', default=64, type=int,
                     help='mini-batch size (default: 64) used for training')
         args = parser.parse_args()
+        parser.add_argument('-f')
 
         dataloader_dict = {}
         sub_dataloader_dict = {}
